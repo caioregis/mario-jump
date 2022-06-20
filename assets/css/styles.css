@@ -23,13 +23,44 @@
 .pipe {
     width: 80px;
     right: 0;
+    animation: pipe-slide 1.8s infinite linear;
 }
 
 .mario {
-    width: 80px;
+    width: 100px;
+    animation: mario-jump 500ms ease-out;
 }
 
 .clouds {
     position: absolute;
     width: 440px;
+    animation: pipe-slide 10s infinite linear;
+}
+
+@keyframes pipe-slide {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes clouds-slide {
+    from {
+        right: -440px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes mario-jump {
+    0%, 100% {
+        bottom: 0;
+    }
+
+    35%, 65% {
+        bottom: 150px;
+    }
 }
