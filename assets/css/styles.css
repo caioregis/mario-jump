@@ -28,6 +28,9 @@
 
 .mario {
     width: 100px;
+}
+
+.mario-jump {
     animation: mario-jump 500ms ease-out;
 }
 
