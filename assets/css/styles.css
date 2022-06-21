@@ -22,7 +22,9 @@
 
 .pipe {
     width: 80px;
-    right: 0;
+}
+
+.pipe-slide {
     animation: pipe-slide 1.8s infinite linear;
 }
 
@@ -38,6 +40,24 @@
     position: absolute;
     width: 440px;
     animation: pipe-slide 10s infinite linear;
+}
+
+.start-game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    padding: 1rem 0.5rem;
+    background-color: #38bbf2;
+    border: 10px solid #2b90bb;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #0074a4;
+    box-shadow: 2px 2px #144c64;
 }
 
 @keyframes pipe-slide {
